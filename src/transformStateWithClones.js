@@ -30,7 +30,7 @@ function transformStateWithClones(state, actions) {
         break;
 
       case 'removeProperties':
-        removeProps(state, keysToRemove);
+        removeProps(state, action.keysToRemove);
         break;
 
       case 'clear':
