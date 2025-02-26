@@ -29,19 +29,19 @@ function transformStateWithClones(state, actions) {
     }
   }
 
-    function addProps(modifiedResult, extraData) {
-      Object.assign(modifiedResult, extraData);
+    function addProps(addResult, extraeData) {
+      Object.assign(addResult, extraeData);
   }
 
-  function removeProps(modifiedResult, keysToRemove) {
-    for (const key of keysToRemove) {
-      delete modifiedResult[key];
+  function removeProps(result, keysinToRemove) {
+    for (const key of keysinToRemove) {
+      delete result[key];
     }
   }
 
-  function clear(modifiedResult) {
-    for (const i in modifiedResult) {
-      delete modifiedResult[i];
+  function clear(plussResult) {
+    for (const i in plussResult) {
+      delete plussResult[i];
     }
   }
 
